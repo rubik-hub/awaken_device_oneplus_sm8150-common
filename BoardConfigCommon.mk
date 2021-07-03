@@ -103,6 +103,10 @@ DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 ODM_MANIFEST_FILES := $(COMMON_PATH)/configs/vintf/manifest-qva.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_oneplus_msmnile
+TARGET_RECOVERY_DEVICE_MODULES ?= init_oneplus_msmnile
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
