@@ -1,8 +1,8 @@
 [
   {
-    "repository": "LineageOS/android_hardware_oneplus",
+    "repository": "rubik-hub/android_hardware_oneplus",
     "target_path": "hardware/oneplus",
-    "branch": "lineage-19.1"
+    "branch": "12.1"
   },
   {
     "repository": "LineageOS/android_kernel_oneplus_sm8150",
