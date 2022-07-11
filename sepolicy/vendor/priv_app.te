@@ -1,0 +1,2 @@
+# Allow Priv-app access zygote unix_stream_socket
+allow priv_app zygote:unix_stream_socket getopt;
