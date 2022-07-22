@@ -383,6 +383,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
+# Properties
+include $(LOCAL_PATH)/configs/properties/default.mk
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
@@ -509,4 +512,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.protected_contents=true \
     ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.wcg_composition_dataspace=143261696
+    ro.surface_flinger.wcg_composition_dataspace=143261696 \
+
