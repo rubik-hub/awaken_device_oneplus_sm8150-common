@@ -5,9 +5,9 @@
     "branch": "12.1"
   },
   {
-    "repository": "rubik-hub/android_kernel_oneplus_sm8150",
+    "repository": "PixelOS-devices/android_kernel_oneplus_sm8150",
     "target_path": "kernel/oneplus/sm8150",
-    "branch": "12.1"
+    "branch": "twelve"
   },
   {
     "remote": "gitlab",
