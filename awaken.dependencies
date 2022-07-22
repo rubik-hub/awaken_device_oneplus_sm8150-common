@@ -10,6 +10,7 @@
     "branch": "12.1"
   },
   {
+    "remote": "gitlab",
     "repository": "rubik-hub/android_packages_apps_GCamGO",
     "target_path": "packages/apps/GCamGO",
     "branch": "12.1"
