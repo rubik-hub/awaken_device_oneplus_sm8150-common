@@ -11,16 +11,15 @@
      limitations under the License.
 -->
 <resources>
-    <string name="panel_title">Panel modes</string>
-    <string name="panel_summary">Modes for panel color correction</string>
+    <string name="panel_title">Chế độ màn hình</string>
+    <string name="panel_summary">Các chế độ căn chỉnh màu màn hình</string>
     <string name="srgb_mode_summary"></string>
-    <string name="srgb_mode_title">sRGB</string>
-    <string name="wide_color_mode_title">AMOLED Wide Gamut</string>
+    <string name="srgb_mode_title">chế độ sRGB</string>
+    <string name="wide_color_mode_title">Dải màu rộng</string>
     <string name="dci_mode_summary"></string>
-    <string name="dci_mode_title">DCI-P3</string>
-    <string name="natural_mode_title">Natural</string>
-    <string name="vivid_mode_title">Vivid</string>
-    <string name="off_mode_title">Off</string>
-    <string name="tile_panel_mode">Panel modes</string>
-    <string name="panel_mode_info">Disabling panel mode requires a reboot.</string>
+    <string name="dci_mode_title">Dải màu rộng DCI-P3</string>
+    <string name="natural_mode_title">Tự nhiên</string>
+    <string name="vivid_mode_title">Sống động</string>
+    <string name="off_mode_title">Tắt</string>
+    <string name="panel_mode_info">Tắt chế độ màn hình yêu cầu khởi động lại.</string>
 </resources>

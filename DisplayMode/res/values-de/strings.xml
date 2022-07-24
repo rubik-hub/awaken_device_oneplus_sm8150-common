@@ -11,16 +11,15 @@
      limitations under the License.
 -->
 <resources>
-    <string name="panel_title">Panel modes</string>
-    <string name="panel_summary">Modes for panel color correction</string>
+    <string name="panel_title">Panelmodus</string>
+    <string name="panel_summary">Modi für die Panel-Farbkorrektur</string>
     <string name="srgb_mode_summary"></string>
-    <string name="srgb_mode_title">sRGB</string>
-    <string name="wide_color_mode_title">AMOLED Wide Gamut</string>
+    <string name="srgb_mode_title">sRGB-Modus</string>
+    <string name="wide_color_mode_title">Breiter Farbraum Modus</string>
     <string name="dci_mode_summary"></string>
-    <string name="dci_mode_title">DCI-P3</string>
-    <string name="natural_mode_title">Natural</string>
-    <string name="vivid_mode_title">Vivid</string>
-    <string name="off_mode_title">Off</string>
-    <string name="tile_panel_mode">Panel modes</string>
-    <string name="panel_mode_info">Disabling panel mode requires a reboot.</string>
+    <string name="dci_mode_title">DCI-P3-Modus mit breitem Farbraum</string>
+    <string name="natural_mode_title">Natürlich</string>
+    <string name="vivid_mode_title">Lebendig</string>
+    <string name="off_mode_title">Aus</string>
+    <string name="panel_mode_info">Die Deaktivierung erfordert einen Neustart.</string>
 </resources>
