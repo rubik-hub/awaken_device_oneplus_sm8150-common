@@ -12,23 +12,7 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/display_title">
-
-    <SwitchPreference
-        android:key="hbm"
-        android:summary="@string/hbm_mode_summary"
-        android:title="@string/hbm_mode_title"
-        android:defaultValue="false" />
-
-    <Preference
-        android:key="panel_category"
-        android:title="@string/panel_category_title"
-        android:summary="@string/panel_category_summary"
-        android:persistent="false" >
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="org.projectfluidsettings.DisplayMode"
-                android:targetClass="org.projectfluid.settings.DisplayMode.PanelSettingsActivity" />
-    </Preference>
+        android:title="@string/panel_title">
 
 </PreferenceScreen>
 

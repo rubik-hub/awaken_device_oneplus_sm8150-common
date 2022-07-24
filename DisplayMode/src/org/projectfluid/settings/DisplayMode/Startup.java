@@ -37,8 +37,6 @@ public class Startup extends BroadcastReceiver {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         restore(SRGBModeSwitch.getFile(),
                 sharedPrefs.getBoolean(DisplayMode.KEY_SRGB_SWITCH, false));
-        restore(HBMModeSwitch.getFile(),
-                sharedPrefs.getBoolean(DisplayMode.KEY_HBM_SWITCH, false));
         restore(DCIModeSwitch.getFile(),
                 sharedPrefs.getBoolean(DisplayMode.KEY_DCI_SWITCH, false));
         restore(WideColorModeSwitch.getFile(),

@@ -26,18 +26,31 @@
 
     <application
         android:icon="@drawable/ic_panel_tile"
-        android:label="@string/display_title"
+        android:label="@string/panel_title"
         android:theme="@style/Theme.SubSettingsBase">
 
         <!-- Display Mode -->
         <activity
             android:name=".DisplayModeActivity"
-            android:label="@string/display_title">
+            android:label="@string/panel_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DisplayMode" />
+
+        <activity
+            android:name="org.projectfluid.settings.DisplayMode.PanelSettingsActivity"
+            android:exported="true"
+            android:label="@string/panel_title"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
@@ -47,19 +60,6 @@
             <meta-data
                 android:name="com.android.settings.order"
                 android:value="30" />
-        </activity>
-
-        <activity android:name=".DisplayMode" />
-
-        <activity
-            android:name="org.projectfluid.settings.DisplayMode.PanelSettingsActivity"
-            android:exported="true"
-            android:label="@string/panel_category_title"
-            android:launchMode="singleTask" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
 
         <receiver android:name="org.projectfluid.settings.DisplayMode.Startup" >
@@ -79,17 +79,5 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
-        <service
-            android:name="org.projectfluid.settings.DisplayMode.HBMModeTileService"
-            android:icon="@drawable/ic_hbm_tile"
-            android:label="@string/tile_hbm_mode"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-        <service android:name="org.projectfluid.settings.DisplayMode.HBMModeService"
-            android:exported="false" />
     </application>
 </manifest>
