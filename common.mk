@@ -378,6 +378,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     oneplus-fwk
 
+# PanelMode
+PRODUCT_PACKAGES += \
+    PanelMode
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
