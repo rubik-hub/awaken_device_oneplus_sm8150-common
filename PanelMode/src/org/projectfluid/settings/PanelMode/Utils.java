@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package org.projectfluid.settings.DisplayMode;
+package org.projectfluid.settings.PanelMode;
 
 import java.io.File;
 import java.io.FileNotFoundException;

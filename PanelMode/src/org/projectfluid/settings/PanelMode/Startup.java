@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package org.projectfluid.settings.DisplayMode;
+package org.projectfluid.settings.PanelMode;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -23,7 +23,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import androidx.preference.PreferenceManager;
 
-import org.projectfluid.settings.DisplayMode.ModeSwitch.*;
+import org.projectfluid.settings.PanelMode.ModeSwitch.*;
 
 public class Startup extends BroadcastReceiver {
 
@@ -36,14 +36,14 @@ public class Startup extends BroadcastReceiver {
     public void onReceive(final Context context, final Intent bootintent) {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         restore(SRGBModeSwitch.getFile(),
-                sharedPrefs.getBoolean(DisplayMode.KEY_SRGB_SWITCH, false));
+                sharedPrefs.getBoolean(PanelMode.KEY_SRGB_SWITCH, false));
         restore(DCIModeSwitch.getFile(),
-                sharedPrefs.getBoolean(DisplayMode.KEY_DCI_SWITCH, false));
+                sharedPrefs.getBoolean(PanelMode.KEY_DCI_SWITCH, false));
         restore(WideColorModeSwitch.getFile(),
-                sharedPrefs.getBoolean(DisplayMode.KEY_WIDECOLOR_SWITCH, false));
+                sharedPrefs.getBoolean(PanelMode.KEY_WIDECOLOR_SWITCH, false));
         restore(NaturalModeSwitch.getFile(),
-                sharedPrefs.getBoolean(DisplayMode.KEY_NATURAL_SWITCH, false));
+                sharedPrefs.getBoolean(PanelMode.KEY_NATURAL_SWITCH, false));
         restore(VividModeSwitch.getFile(),
-                sharedPrefs.getBoolean(DisplayMode.KEY_VIVID_SWITCH, false));
+                sharedPrefs.getBoolean(PanelMode.KEY_VIVID_SWITCH, false));
     }
 }

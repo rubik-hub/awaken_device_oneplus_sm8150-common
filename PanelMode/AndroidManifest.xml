@@ -14,7 +14,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           android:sharedUserId="android.uid.system"
-          package="org.projectfluid.settings.DisplayMode"
+          package="org.projectfluid.settings.PanelMode"
           android:versionCode="1"
           android:versionName="1.0" >
 
@@ -29,9 +29,9 @@
         android:label="@string/panel_title"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <!-- Display Mode -->
+        <!-- Panel Mode -->
         <activity
-            android:name=".DisplayModeActivity"
+            android:name=".PanelModeActivity"
             android:label="@string/panel_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
@@ -41,10 +41,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DisplayMode" />
+        <activity android:name=".PanelMode" />
 
         <activity
-            android:name="org.projectfluid.settings.DisplayMode.PanelSettingsActivity"
+            android:name="org.projectfluid.settings.PanelMode.PanelSettingsActivity"
             android:exported="true"
             android:label="@string/panel_title"
             android:launchMode="singleTask" >
@@ -62,7 +62,7 @@
                 android:value="30" />
         </activity>
 
-        <receiver android:name="org.projectfluid.settings.DisplayMode.Startup" >
+        <receiver android:name="org.projectfluid.settings.PanelMode.Startup" >
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -70,7 +70,7 @@
 
         <!-- Quick Settings Tiles -->
         <service
-            android:name="org.projectfluid.settings.DisplayMode.PanelModeTileService"
+            android:name="org.projectfluid.settings.PanelMode.PanelModeTileService"
             android:icon="@drawable/ic_panel_tile"
             android:label="@string/tile_panel_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">

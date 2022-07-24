@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package org.projectfluid.settings.DisplayMode;
+package org.projectfluid.settings.PanelMode;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -34,7 +34,7 @@ import androidx.viewpager.widget.ViewPager;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import org.projectfluid.settings.DisplayMode.ModeSwitch.*;
+import org.projectfluid.settings.PanelMode.ModeSwitch.*;
 
 public class PanelSettings extends PreferenceFragment implements RadioGroup.OnCheckedChangeListener {
 
@@ -101,23 +101,23 @@ public class PanelSettings extends PreferenceFragment implements RadioGroup.OnCh
         SharedPreferences.Editor edit = sharedPrefs.edit();
         boolean natural = checkedId == R.id.natural_mode;
         Utils.writeValue(NaturalModeSwitch.getFile(), natural ? "1" : "0");
-        edit.putBoolean(DisplayMode.KEY_NATURAL_SWITCH, natural);
+        edit.putBoolean(PanelMode.KEY_NATURAL_SWITCH, natural);
 
         boolean vivid = checkedId == R.id.vivid_mode;
         Utils.writeValue(VividModeSwitch.getFile(), vivid ? "1" : "0");
-        edit.putBoolean(DisplayMode.KEY_VIVID_SWITCH, vivid);
+        edit.putBoolean(PanelMode.KEY_VIVID_SWITCH, vivid);
 
         boolean dci = checkedId == R.id.dci_mode;
         Utils.writeValue(DCIModeSwitch.getFile(), dci ? "1" : "0");
-        edit.putBoolean(DisplayMode.KEY_DCI_SWITCH, dci);
+        edit.putBoolean(PanelMode.KEY_DCI_SWITCH, dci);
 
         boolean wide = checkedId == R.id.wide_color_mode;
         Utils.writeValue(WideColorModeSwitch.getFile(), wide ? "1" : "0");
-        edit.putBoolean(DisplayMode.KEY_WIDECOLOR_SWITCH, wide);
+        edit.putBoolean(PanelMode.KEY_WIDECOLOR_SWITCH, wide);
 
         boolean srgb = checkedId == R.id.srgb_mode;
         Utils.writeValue(SRGBModeSwitch.getFile(), srgb ? "1" : "0");
-        edit.putBoolean(DisplayMode.KEY_SRGB_SWITCH, srgb);
+        edit.putBoolean(PanelMode.KEY_SRGB_SWITCH, srgb);
 
         edit.apply();
     }

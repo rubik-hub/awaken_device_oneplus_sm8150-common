@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package org.projectfluid.settings.DisplayMode;
+package org.projectfluid.settings.PanelMode;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,7 +30,7 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 import androidx.preference.TwoStatePreference;
 
-public class DisplayMode extends PreferenceFragment
+public class PanelMode extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_CATEGORY_GRAPHICS = "graphics";

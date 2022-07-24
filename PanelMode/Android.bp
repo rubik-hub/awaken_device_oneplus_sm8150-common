@@ -15,7 +15,7 @@
 // limitations under the License.
 //
 android_app {
-    name: "DisplayMode",
+    name: "PanelMode",
 
     defaults: [
         "SettingsLibDefaults",
